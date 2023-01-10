@@ -1,0 +1,14 @@
+scalar Map
+
+type Password {
+  verify: Boolean!
+  noMatch: [String!]!
+}
+
+type Query {
+  verify(password: String!, rules: [Map]!): Password!
+}
+
+schema {
+  query: Query
+}
