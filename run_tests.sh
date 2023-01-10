@@ -1,0 +1,1 @@
+go test graphpass graphpass/password graphpass/utils -cover
